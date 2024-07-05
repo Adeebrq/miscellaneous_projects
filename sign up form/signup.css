@@ -1,0 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    font-family: "Baskervville";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(images/pic.jpg) no-repeat center center/cover;
+}
+.container {
+    width: 550px;
+    height: 450px;
+}
+.header {
+    font-size: 1.2rem;
+    border: solid 2px;
+    border-color: #fff;
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.main-content {
+    width: 100% ;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px;
+}
+.main-content .text-area {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.main-content .person {
+    color: red;
+    font-size: 1.9rem;
+    font-style: italic;
+}
+.button-area button {
+    background-color: black;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.button-area button:active {
+    background-color: lightblue;
+}

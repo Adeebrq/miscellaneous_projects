@@ -1,0 +1,78 @@
+body {
+    /*ALWAYS USE FORWARD SLASHES FOR LOCATION*/
+    background: url(img/wallpaper.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn {
+    position: relative;
+    top: 70%;
+    left: 10%;
+    width: 350px;
+    font-size: 2rem;
+    height: 80px;
+    border-radius: 10px;
+    background: transparent;
+    border: solid 3px ;
+    color: white;
+    border-color: wheat;
+    padding-top: 5px;
+    box-shadow: 0 0 50px ;
+    transition:.5s;
+    cursor: pointer;
+    text-align: center;
+
+}
+#open-btn:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+    box-shadow: 0 0 100px black;
+}
+#modal {
+    top: 50%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+
+}
+#Close-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    color: red;
+}
+#modal-Container {
+    display: none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.5);
+}
+/*ANIMATION PART*/
+
+@keyframes animatemodal {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
